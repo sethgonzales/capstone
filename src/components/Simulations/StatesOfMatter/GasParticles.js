@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 
 const GasParticles = () => {
   const canvasRef = useRef(null);
-  const particleCount = 36;
+  const particleCount = 120;
   const particleSize = 10;
   const particleGap = 2;
-  const movementFactor = 3;
+  const movementFactor = 1;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -39,7 +39,7 @@ const GasParticles = () => {
 
       particles.forEach(particle => {
         ctx.beginPath();
-        ctx.fillStyle = '#fff';
+        ctx.fillStyle = '#3D8A45';
         ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
         ctx.fill();
         ctx.closePath();

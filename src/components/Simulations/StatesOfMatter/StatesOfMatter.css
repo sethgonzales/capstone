@@ -49,10 +49,11 @@
   position: relative;
   width: 400px;
   height: 400px;
-  background-color: #8186e4;
-  border: solid 3px #3e43a7;
-  box-shadow: -10px 10px 0px #3e43a7;
-  border-radius: 20px;
+  background-color: white;
+  /* background-color: #8186e4; */
+  /* border: solid 3px #3e43a7; */
+  /* box-shadow: -10px 10px 0px #3e43a7; */
+  /* border-radius: 20px; */
 }
 
 .solid-canvas-container {
