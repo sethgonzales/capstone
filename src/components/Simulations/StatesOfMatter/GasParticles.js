@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 
 const GasParticles = () => {
   const canvasRef = useRef(null);
-  const particleCount = 120;
+  const particleCount = 36;
   const particleSize = 10;
   const particleGap = 2;
-  const movementFactor = 1;
+  const movementFactor = 3;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -110,7 +110,7 @@ const GasParticles = () => {
     <canvas
       ref={canvasRef}
       width={400} height={400}
-      style={{ borderRadius: '20px' }}
+      // style={{ borderRadius: '20px' }}
     ></canvas>
   );
 };
